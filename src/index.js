@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
+import { StatusBar } from 'react-native';
 
 import Navigation from './Navigation';
 
-
 export default function App() {
   return (
-    <NavigationContainer>
-      <Navigation />
-    </NavigationContainer>
+    <Fragment>
+      <StatusBar barStyle="light-content" backgroundColor="#000" />
+      <NavigationContainer>
+        <Navigation />
+      </NavigationContainer>
+    </Fragment>
 
   );
 }
 
-  

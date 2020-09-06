@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-export const Wrapper = styled.View`
+export const Wrapper = styled.ScrollView`
     background: #000;
     flex:1;
 `;
@@ -104,12 +104,11 @@ export const Card = styled.View`
 
 export const CardBody = styled.View`
     flex-direction: row
-
 `;
 
 export const CardDetails = styled.View`
     flex: 1;
-    margin-right: 25px;
+    margin-right: 20px;
 `;
 
 export const CardTitle = styled.Text`
@@ -119,7 +118,7 @@ export const CardTitle = styled.Text`
 `;
 
 export const CardInfo = styled.Text`
-    font-size: 16px;
+    font-size: 14px;
     color: rgba(255,255,255,0.8);
     margin-top: 15px;
 `;
@@ -140,5 +139,25 @@ export const AddLabel = styled.Text`
     font-weight: bold;
     margin-left: 15px;
 `;
+
+export const UseTicketContainer = styled.View`
+    align-items: center;
+    margin-top: 25px;
+`;
+
+export const UseTicketButton = styled.TouchableOpacity`
+    flex-direction: row;
+
+`;
+
+export const UseTicketLabel = styled.Text`
+    color: #0DB060;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 15px;
+    text-decoration-line: underline;
+`;
+
+
 
 
